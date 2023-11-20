@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="bg-slate-200">
+    <div class="flex flex-row justify-center items-center h-96">
+      <div class="bg-white rounded-xl flex flex-col justify-start w-96 m-5">
+        <p class="text-zinc-600 text-xl ml-9 mt-5 mb-5 flex flex-row justify-start text-r">
+          Login to website
+        </p>
+        <div class="flex flex-row justify-around ml-2 mb-5">
+          <label class="p-2 ml-0" for="email">Email</label>
+          <input class="rounded-md border border-zinc-600 hover:border-violet-500 focus:outline-none focus:border-violet-300 p-2 ml-10" type="email" id="email" />
+        </div>
+        <div class="flex flex-row justify-around ml-2">
+          <label class="p-2 mr-2" for="password">Password</label>
+          <input class="rounded-md border border-zinc-600 hover:border-violet-500 focus:outline-none focus:border-violet-300 p-2" type="password" id="password" />
+        </div>
+        <div class="flex flex-row m-5">
+          <button class="w-36 p-2 bg-violet-500 hover:bg-violet-400 active:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 rounded-full text-white" type="button">
+            Sign in
+          </button>
+          <button class="w-36 p-2 ml-4 bg-white hover:bg-violet-400 active:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 rounded-full text-violet-600" type="button">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
