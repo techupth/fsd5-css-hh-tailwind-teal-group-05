@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body class="h-full bg-slate-200 flex flex-row justify-center mt-44">
+    <!-- Start coding here -->
+    <div class="bg-white p-5 rounded-xl flex flex-col gap-2">
+      <h1 class="text-zinc-600 text-xl p-2">Login to website</h1>
 
-<body>
-  <!-- Start coding here -->
-</body>
+      <div id="input">
+        <div id="email-input" class="flex flex-row justify-start gap-10 p-2">
+          <div>Email</div>
+          <input
+            class="border border-zinc-600 hover:border-violet-500 focus:border-violet-300 focus:outline-none rounded-md"
+            type="text"
+            id="email-input"
+          />
+        </div>
 
+        <div id="password input" class="flex flex-row justify-start gap-3 p-2">
+          <div>Password</div>
+          <input
+            class="border border-zinc-600 hover:border-violet-500 focus:border-violet-300 focus:outline-none rounded-md"
+            type="password"
+            id="email-input"
+          />
+        </div>
+      </div>
+
+      <div id="button flex flex-row justify-center">
+        <button
+          class="w-36 p-2 bg-violet-500 rounded-full text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-violet-300 focus:ring-2"
+        >
+          Sign in
+        </button>
+        <button
+          class="w-36 p-2 bg-white rounded-full text-violet-600 hover:bg-violet-100 focus:ring-violet-300 focus:ring-2"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
